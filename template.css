@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Roboto', lucida grande, Arial, sans-serif;
+	font-family: 'Droid Sans', lucida grande, Arial, sans-serif;
 }
 input, button, select, textarea, body {
-	font-family: 'Roboto', lucida grande, Arial, sans-serif;
+	font-family: 'Droid Sans', lucida grande, Arial, sans-serif;
 }
 
 strong {font-weight:700;}
@@ -12,11 +12,11 @@ input, button, select, textarea, body {font-weight:400;}
 h1, h2, h3, h4, h5, h6{font-weight:400;}
 
 /****************************LESS CSS****************************/
-@baseColor : #f3a535;
-@buttonMain : #f3a535;
-@darkColor : #424242;
+@baseColor : #1E4474;
+@buttonMain : #1E4474;
+@darkColor : #505050;
 @lightColor : #fff;
-@pixelfont: 16px;
+@pixelfont: 13px;
 @line-height-base: 1.41;
 
 /*Helper function*/
@@ -259,7 +259,9 @@ h6{
   color: #d50000 !important;
 }
 
-/******* Buttons ********/
+/*
+* Buttons
+*/
 .btn-primary{
     .btn;
 }
@@ -269,7 +271,9 @@ h6{
 }
 
 
-/******* Fonts ********/
+/*
+* Fonts
+*/
 .font-40 {
 	font-size: 40px;
 }
@@ -287,7 +291,9 @@ h6{
 }
 
 /**************************** Homepage CSS ****************************/
-/*------------------ Header ------------------*/
+/*
+* Header
+*/
 .home .header-shadow {
 	box-shadow: none;
 }
@@ -299,45 +305,34 @@ header img.brand {
 
 #header nav[role="navigation"] > ul {
 	margin-top: 0;
-	> li > a {
-		color: #000;
-		text-transform: uppercase;
-		&:hover, &:active, &:focus {
-			color: @baseColor;
-			background: none;
-			.caret {
-				border-bottom-color: @baseColor;
-				border-top-color: @baseColor;
-			}
-		}
-		.caret {
-			border-bottom-color: #000;
-			border-top-color: #000;
-		}
-	}
-	> li.active > a {
-		color: @baseColor;
-		background: none;
-		.caret {
-			border-bottom-color: @baseColor;
-			border-top-color: @baseColor;
-		}
-	}
 	ul.dropdown-menu > li > a {
 		&:hover, &:active, &:focus {
 			color: #fff;
 			background: @baseColor;
 		}
 	}
-	> li {
-		&:hover, &:active, &:focus {
-			> a {
-				background: #002950;
-			}
-		}
-	}
 	> li + li {
 		margin-left: 25px;
+	}
+}
+
+#header nav[role="navigation"] > ul > li {
+	> a {
+		color: #000;
+		text-transform: uppercase;
+		.caret {
+			border-bottom-color: #000;
+			border-top-color: #000;
+		}
+	}
+	&:hover, &:active, &:focus, &.active {
+		> a {
+			background: #002950;
+		}
+		.caret {
+			border-bottom-color: @baseColor;
+			border-top-color: @baseColor;
+		}
 	}
 }
 
@@ -358,9 +353,13 @@ nav[role="navigation"] ul li li:hover > a {
 	color: #fff;
 }
 
-/**************************** Custom CSS ****************************/
+/*
+* Custom CSS
+*/
 
-/************* Media Queries *************/
+/*
+* Media Queries
+*/
 @media (min-width: 992px) and (max-width: 1199px) {
 
 }

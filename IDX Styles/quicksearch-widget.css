@@ -1,0 +1,98 @@
+/* Replace existing ID to be a new one */
+
+#IDX-quicksearch-25976 { 
+	border: none; 
+	box-shadow: none; 
+	-webkit-box-shadow: none; 
+}
+#IDX-quicksearchForm-25976 > div + div {
+	margin-top: 10px;
+}
+#IDX-quicksearch-25976 label { 
+	margin: 0 5px;
+}
+#IDX-qsIdxIDWrap-25976 { 
+display: none !important;
+}
+#IDX-qsCityListWrap-25976 {
+margin-top: 20px;
+}
+.IDX-qsInput {
+	width: 100%;
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555;
+	vertical-align: middle;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#IDX-qsIdxIDWrap-25976 #IDX-qsIdxID-25976,
+#IDX-qsPtWrap-25976 #IDX-qsPt-25976,
+#IDX-qsCityListWrap-25976 #IDX-qsCityList-25976 {
+	width: 100%;
+}
+.IDX-qsFieldWrap {
+	width: 100%;
+	float: none;
+}
+#IDX-qsMinPriceWrap-25976,
+#IDX-qsMaxPriceWrap-25976,
+#IDX-qsMinBedWrap-25976,
+#IDX-qsMinBathWrap-25976 {
+	float: left;
+	width: 50%;
+}
+#IDX-qsMaxPriceWrap-25976,
+#IDX-qsMinBathWrap-25976 {
+	padding-left: 10px;
+}
+#IDX-qsIdxIDLabel-25976 { 
+	display: none; 
+}
+#IDX-qsPtLabel-25976 { 
+	display: none; 
+}
+#IDX-qsCityListLabel-25976 { 
+	display: none;
+}
+#IDX-qsSubmitWrap-25976 {
+	margin-top: 20px;
+}
+#IDX-qsCityList-25976 {
+	margin-top: 160px;
+}
+#IDX-qsSubmitWrap-25976 #IDX-qsSubmit-25976 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  border-color: #fff;
+  background-color: #fff;
+  color: #000;
+  text-shadow: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #044983;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+width: 50%;
+margin: 0 auto;
+min-height: 50px;
+}
+#IDX-qsSubmitWrap-25976 #IDX-qsSubmit-25976:hover,
+#IDX-qsSubmitWrap-25976 #IDX-qsSubmit-25976:active,
+#IDX-qsSubmitWrap-25976 #IDX-qsSubmit-25976:focus {
+  background: #ebebeb;
+}
+
+@media (max-width: 767px) {
+#IDX-qsSubmitWrap-25976 #IDX-qsSubmit-25976 {
+width: 100%;
+}
+}

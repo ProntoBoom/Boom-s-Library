@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6{font-weight:400;}
 /****************************LESS CSS****************************/
 @baseColor : #1E4474;
 @buttonMain : #1E4474;
+@buttonCustom: #123456;
 @darkColor : #505050;
 @lightColor : #fff;
 @pixelfont: 13px;
@@ -267,7 +268,7 @@ h6{
 }
 
 .btn-custom{
-    .btn(#62a7cc);
+    .btn(@buttonCustom);
 }
 
 

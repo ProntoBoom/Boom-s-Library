@@ -328,7 +328,7 @@ header img.brand {
 	}
 	&:hover, &:active, &:focus, &.active {
 		> a {
-			background: #002950;
+			background-color: transparent;
 		}
 		.caret {
 			border-bottom-color: @baseColor;

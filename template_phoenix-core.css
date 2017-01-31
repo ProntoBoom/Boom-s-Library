@@ -366,6 +366,10 @@ nav[role="navigation"] ul li li:hover > a {
 	max-width: 960px;
 }
 
+.body-background {
+	min-height: 600px;
+}
+
 .body-background .content article,
 .content #toc {
 	left: 30%;

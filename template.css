@@ -337,6 +337,10 @@ header img.brand {
 	}
 }
 
+#header nav[role="navigation"] > ul > li > a:focus {
+	background-color: transparent;
+}
+
 .dropdown-submenu {
 	&:hover, &:active, &:focus {
 		> a {

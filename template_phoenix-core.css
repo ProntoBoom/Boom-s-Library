@@ -337,6 +337,10 @@ header img.brand {
 	}
 }
 
+#header nav[role="navigation"] > ul > li > a:focus {
+	background-color: transparent;
+}
+
 #header nav[role="navigation"] > ul .dropdown-menu {
 	background-color: #216c8e;
 	border-radius: 0;

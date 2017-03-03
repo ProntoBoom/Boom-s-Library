@@ -35,6 +35,10 @@ div[role="complementary"] div > ul {
     border: 0;
 }
 
+div[role="complementary"] .flexnav a.current-page {
+	color: #8cb837;
+}
+
 .sidebar-content .nav.nav-tabs.nav-stacked a,
 div[role="complementary"] .widget > ul > li > a{
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;

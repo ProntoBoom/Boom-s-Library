@@ -36,7 +36,7 @@ div[role="complementary"] div > ul {
 }
 
 div[role="complementary"] .flexnav a.current-page {
-	color: #8cb837;
+	color: #8cb837; /* edit this property for active page */
 }
 
 .sidebar-content .nav.nav-tabs.nav-stacked a,
@@ -88,10 +88,14 @@ div[role="complementary"] h3::after {
 }
 
 div[role="complementary"] .widget-title {
-    color: #000;
+    color: #000; /* edit this property to dark color */
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+div[role="complementary"] .widget-title a {
+	color: #000; /* edit this property to dark color */
 }
 
 div[role="complementary"] .product-categories {

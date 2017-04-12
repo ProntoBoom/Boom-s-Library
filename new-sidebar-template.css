@@ -36,7 +36,7 @@ div[role="complementary"] div > ul {
 }
 
 div[role="complementary"] .flexnav a.current-page {
-	color: #8cb837; /* edit this property for active page */
+	color: #8cb837 !important; /* edit this property for active page */
 }
 
 .sidebar-content .nav.nav-tabs.nav-stacked a,
@@ -44,6 +44,17 @@ div[role="complementary"] .widget > ul > li > a{
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 0 none;
     padding: 7px 0;
+	color: #333;
+}
+
+.sidebar-content .nav.nav-tabs.nav-stacked a:hover,
+div[role="complementary"] .widget > ul > li > a:hover,
+.sidebar-content .nav.nav-tabs.nav-stacked a:active,
+div[role="complementary"] .widget > ul > li > a:active,
+.sidebar-content .nav.nav-tabs.nav-stacked a:focus,
+div[role="complementary"] .widget > ul > li > a:focus  {
+	color: #f00; /* edit this property for recent post widget */
+	text-decoration: none;
 }
 
 div[role="complementary"] div ul {

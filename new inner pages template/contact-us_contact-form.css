@@ -24,6 +24,10 @@
     margin-top: 15px;
 }
 
+.contact-form .gform_wrapper .gform_body .ginput_container_checkbox label {
+	display: inline-block;
+}
+
 .contact-form .gform_footer .btn {
   color: #fff;
   padding: 15px 40px;

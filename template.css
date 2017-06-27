@@ -359,6 +359,13 @@ nav[role="navigation"] ul li li:hover > a {
 }
 
 /*
+* footer
+*/
+#footer #menu-bottom-footer li {
+  line-height: inherit;
+}
+
+/*
 * Custom CSS
 */
 

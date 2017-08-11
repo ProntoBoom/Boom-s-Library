@@ -1,0 +1,138 @@
+<style>
+/*************** My Account Styling ********/
+.masthead .row {
+  min-height: 380px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logged-in .full-login {
+  width: 100%;
+  margin-left: 0;
+}
+
+.logged-in .hidden-login {
+  display: none;
+}
+
+#customer_login .u-column1.col-1 {
+  width: 100%;
+  float: none;
+}
+
+#customer_login .u-column2.col-2 {
+  display: none;
+}
+
+#customer_login .u-column1.col-1 .woocommerce-Input--text {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#customer_login .u-column1.col-1 .woocommerce-Button {
+  font-size: 16px;
+}
+
+.well-regis {
+  border: 1px solid #d3ced2;
+  padding: 20px;
+  margin: 2em 0;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.gform_wrapper .top_label .gfield_label {
+  font-weight: normal;
+}
+
+nav.woocommerce-MyAccount-navigation {
+  float: none !important;
+  width: 100% !important;
+  text-align: center;
+}
+
+nav.woocommerce-MyAccount-navigation ul {
+  padding: 0;
+}
+
+nav.woocommerce-MyAccount-navigation ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 6px;
+}
+
+nav.woocommerce-MyAccount-navigation ul li a {
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 20px;
+  padding: 6px 20px;
+  text-decoration: none;
+}
+
+nav.woocommerce-MyAccount-navigation ul li a:hover,
+nav.woocommerce-MyAccount-navigation ul li a:focus,
+nav.woocommerce-MyAccount-navigation ul li a:active {
+  background-color: #F8F8F8;
+}
+
+.woocommerce-MyAccount-content {
+  float: none !important;
+  width: 100% !important;
+}
+
+/* credit card table */
+.woocommerce-MyAccount-content .shop_table br {
+  display: none;
+}
+
+.woocommerce-MyAccount-content input.button.paytrace_update_cards_0.alt {
+  margin-left: 20px;
+}
+
+.woocommerce-MyAccount-content form[method="post"] {
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  #customer_login .u-column1.col-1 h2 {
+    text-align: center;
+  }
+  .masthead .row > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  nav.woocommerce-MyAccount-navigation ul li {
+    width: 100%;
+  }
+  nav.woocommerce-MyAccount-navigation ul li a {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .woocommerce-MyAccount-content input.button.paytrace_update_cards_0.alt {
+    margin-left: 0;
+  }
+}
+</style>

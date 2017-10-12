@@ -15,10 +15,6 @@ div[role="complementary"] div > h3:hover {
     background: none;
 }
 
-div[role="complementary"] > .inner > aside {
-    margin-top: 30px;
-}
-
 div[role="complementary"] aside > h3, 
 div[role="complementary"] div > h3 {
     background-color: transparent;

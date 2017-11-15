@@ -58,6 +58,8 @@ h1, h2, h3, h4, h5, h6{font-weight:400;}
 }
 .element(@_arg, @font:@_arg) {
      a:hover,
+     a:active,
+     a:focus,
      .sidebar-content .nav.nav-tabs.nav-stacked .parent ul a.selected,
      .sidebar-content .nav li li a:hover,
      div[role="complementary"] div > ul > li:hover{

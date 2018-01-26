@@ -10,9 +10,10 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	text-align: center;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 767px) {
 	.inner-masthead {
 		height: 250px;
 	}

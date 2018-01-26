@@ -2,33 +2,33 @@
 
 /* sidebar */
 div[role="complementary"]{
-    width: 20%;
+	width: 20%;
 }
 
 div[role="complementary"] .inner {
-    border: 0 none;
-    border-radius: 0;
+	border: 0 none;
+	border-radius: 0;
 }
 
 div[role="complementary"] aside > h3:hover, 
 div[role="complementary"] div > h3:hover {
-    background: none;
+	background: none;
 }
 
 div[role="complementary"] aside > h3, 
 div[role="complementary"] div > h3 {
-    background-color: transparent;
-    border-bottom: 0 none;
-    border-top: 0 none;
-    padding: 0;
+	background-color: transparent;
+	border-bottom: 0 none;
+	border-top: 0 none;
+	padding: 0;
 }
 
 div[role="complementary"] aside > .nav-tabs, 
 div[role="complementary"] div > ul {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    border: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	border: 0;
 }
 
 div[role="complementary"] .flexnav a.current-page {
@@ -37,9 +37,9 @@ div[role="complementary"] .flexnav a.current-page {
 
 .sidebar-content .nav.nav-tabs.nav-stacked a,
 div[role="complementary"] .widget > ul > li > a{
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 0 none;
-    padding: 7px 0;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 0 none;
+	padding: 7px 0;
 	color: #333;
 }
 
@@ -54,51 +54,51 @@ div[role="complementary"] .widget > ul > li > a:focus  {
 }
 
 div[role="complementary"] div ul {
-    padding-left: 0;
+	padding-left: 0;
 }
 
 div[role="complementary"] .inner ul ul {
-    font-size: 12px;
-    margin-left: 30px;
-    list-style: outside none none;
+	font-size: 12px;
+	margin-left: 30px;
+	list-style: outside none none;
 }
 
 div[role="complementary"] .inner ul ul li a {
-    border-top: 0 none !important;
-    display: inline;
-    color: #666;
+	border-top: 0 none !important;
+	display: inline;
+	color: #666;
 }
 
 div[role="complementary"] .inner ul ul li a::before {
-    content: "";
-    display: block;
-    font-family: fontawesome;
-    height: 0;
-    left: -1em;
-    position: relative;
-    width: 0;
+	content: "";
+	display: block;
+	font-family: fontawesome;
+	height: 0;
+	left: -1em;
+	position: relative;
+	width: 0;
 }
 
 div[role="complementary"] .inner ul ul li {
-    margin: 5px 0;
-    overflow: visible;
+	margin: 5px 0;
+	overflow: visible;
 }
 
 div[role="complementary"] .widget-title::after, 
 div[role="complementary"] h3::after {
-    background: #b72a2a none repeat scroll 0 0; /*edit this property for underline color */
-    content: "";
-    display: block;
-    height: 1px;
-    margin-top: 10px;
-    width: 26px;
+	background: #b72a2a none repeat scroll 0 0; /*edit this property for underline color */
+	content: "";
+	display: block;
+	height: 1px;
+	margin-top: 10px;
+	width: 26px;
 }
 
 div[role="complementary"] .widget-title {
-    color: #000; /* edit this property to dark color */
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
+	color: #000; /* edit this property to dark color */
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 div[role="complementary"] .widget-title a {
@@ -106,52 +106,52 @@ div[role="complementary"] .widget-title a {
 }
 
 div[role="complementary"] .product-categories {
-    font-size: 12px;
-    list-style: outside none none;
-    margin-top: 20px;
-    padding: 0;
+	font-size: 12px;
+	list-style: outside none none;
+	margin-top: 20px;
+	padding: 0;
 }
 
 div[role="complementary"] .well {
-    background-color: #f2f2f2;
-    border-radius: 0;
-    box-shadow: none;
+	background-color: #f2f2f2;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 div[role="complementary"] > .inner > .search-widget:first-child {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border-radius: 0;
-    padding: 0;
-    margin-bottom: 30px;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border-radius: 0;
+	padding: 0;
+	margin-bottom: 30px;
 }
 
 div[role="complementary"] > .inner > .search-widget:first-child .navbar-search .search-query {
-    border: 1px solid #ccc;
-    border-radius: 0;
-    box-shadow: none;
-    font-weight: lighter;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: lighter;
 }
 
 div[role="complementary"] div > select {
-    margin: 10px 0;
-    width: 100%;
+	margin: 10px 0;
+	width: 100%;
 }
 
 div[role="complementary"] .inner div > div, 
 div[role="complementary"] .inner div > p {
-    margin: 0;
+	margin: 0;
 }
 
 div[role="complementary"] div > ul > li {
-    border: 0 none;
-    padding: 5px 0;
+	border: 0 none;
+	padding: 5px 0;
 }
 
 .sidebar-content .nav.nav-tabs.nav-stacked .parent ul a.selected, 
 .sidebar-content .nav li li a:hover, 
 div[role="complementary"] div > ul > li:hover {
-    background-color: transparent;
-    border: 0 none !important;
+	background-color: transparent;
+	border: 0 none !important;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -159,12 +159,12 @@ div[role="complementary"] div > ul > li:hover {
 }
 
 @media  (max-width: 991px) {
-    div[role="complementary"] {
-        width: 30%;
-    }
+	div[role="complementary"] {
+		width: 30%;
+	}
 }
 @media (max-width: 767px) {
-    div[role="complementary"] {
-        width: 100%;
-    }
+	div[role="complementary"] {
+		width: 100%;
+	}
 }

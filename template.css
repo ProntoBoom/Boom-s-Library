@@ -7,10 +7,6 @@ input, button, select, textarea, body {
 	font-family: 'Droid Sans', lucida grande, Arial, sans-serif;
 }
 
-strong {font-weight:700;}
-input, button, select, textarea, body {font-weight:400;}
-h1, h2, h3, h4, h5, h6{font-weight:400;}
-
 /****************************LESS CSS****************************/
 @baseColor : #1E4474;
 @buttonMain : #1E4474;
@@ -277,21 +273,7 @@ h6{
 /*
 * Fonts
 */
-.font-40 {
-	font-size: 40px;
-}
 
-.font-30 {
-	font-size: 30px;
-}
-
-.font-24 {
-	font-size: 24px;
-}
-
-.font-18 {
-	font-size: 18px;
-}
 
 /**************************** Homepage CSS ****************************/
 /*

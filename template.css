@@ -288,7 +288,7 @@ header img.brand {
 	margin: 0 auto;
 }
 
-#header nav[role="navigation"] > ul {
+header nav[role="navigation"] > ul {
 	margin-top: 0;
 	ul.dropdown-menu > li > a {
 		&:hover, &:active, &:focus {
@@ -301,7 +301,7 @@ header img.brand {
 	}
 }
 
-#header nav[role="navigation"] > ul > li {
+header nav[role="navigation"] > ul > li {
 	> a {
 		color: #000;
 		text-transform: uppercase;
@@ -321,7 +321,7 @@ header img.brand {
 	}
 }
 
-#header nav[role="navigation"] > ul > li > a:focus {
+header nav[role="navigation"] > ul > li > a:focus {
 	background-color: transparent;
 }
 
@@ -345,7 +345,7 @@ nav[role="navigation"] ul li li:hover > a {
 /*
 * footer
 */
-#footer #menu-bottom-footer li {
+footer #menu-bottom-footer li {
 	line-height: inherit;
 }
 

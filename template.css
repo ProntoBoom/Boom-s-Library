@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');
 
-h1, h2, h3, h4, h5, h6 {
+input, button, select, textarea, body {
 	font-family: 'Droid Sans', lucida grande, Arial, sans-serif;
 }
-input, button, select, textarea, body {
+
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Droid Sans', lucida grande, Arial, sans-serif;
 }
 
@@ -288,8 +289,11 @@ header img.brand {
 	margin: 0 auto;
 }
 
-header nav[role="navigation"] > ul {
+header nav[role="navigation"] > ul:first-child {
 	margin-top: 0;
+}
+
+header nav[role="navigation"] > ul {
 	ul.dropdown-menu > li > a {
 		&:hover, &:active, &:focus {
 			color: #fff;

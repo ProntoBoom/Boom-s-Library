@@ -309,7 +309,7 @@ header nav[role="navigation"] > ul > li {
 	> a {
 		color: #000;
 		text-transform: uppercase;
-		.caret {
+		&.dropdown-toggle .caret {
 			border-bottom-color: #000;
 			border-top-color: #000;
 		}
@@ -317,10 +317,10 @@ header nav[role="navigation"] > ul > li {
 	&:hover, &:active, &:focus, &.active {
 		> a {
 			background-color: transparent;
-		}
-		.caret {
-			border-bottom-color: @baseColor;
-			border-top-color: @baseColor;
+			&.dropdown-toggle .caret {
+				border-bottom-color: @baseColor;
+				border-top-color: @baseColor;
+			}
 		}
 	}
 }

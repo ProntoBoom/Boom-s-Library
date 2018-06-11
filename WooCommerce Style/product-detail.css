@@ -1,0 +1,15 @@
+<style>
+div[role="complementary"] {
+	display: none;
+}
+
+.body-background .content > article {
+	left: 0;
+	width: 100%;
+}
+
+.woocommerce .quantity .qty {
+	min-height: 54px;
+	border: 1px solid #ccc;
+}
+</style>

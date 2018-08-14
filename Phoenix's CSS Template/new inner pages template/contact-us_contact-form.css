@@ -10,7 +10,7 @@
 
 .contact-form .gform_wrapper .form-control {
 	min-height: 50px;
-	padding: 15px !important;
+	padding: 10px;
 	background-color: #fbfbfc;
 }
 
@@ -53,6 +53,10 @@ address {
 	}
 	.contact-form .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="image"]):not([type="file"]) {
 		min-height: 50px;
+	}
+	.contact-form .gform_wrapper .top_label li.gfield.gf_left_half .ginput_container:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm):not(.ginput_container_date):not(.ginput_quantity):not(.datepicker), 
+	.contact-form .gform_wrapper .top_label li.gfield.gf_right_half .ginput_container:not(.gfield_time_hour):not(.gfield_time_minute):not(.gfield_time_ampm):not(.ginput_container_date):not(.ginput_quantity):not(.datepicker) {
+	    margin-top: 15px;
 	}
 	.contact-form .gform_wrapper .top_label li.gfield.gf_left_half, 
 	.contact-form .gform_wrapper .top_label li.gfield.gf_right_half {

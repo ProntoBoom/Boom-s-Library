@@ -366,12 +366,7 @@ footer #menu-bottom-footer li {
 
 @media  (max-width: 991px) {
 	nav[role="navigation"] {
-		select {
-			display: block;
-		}
-		ul {
-			display: none;
-		}
+		display: none;
 	}
 }
 

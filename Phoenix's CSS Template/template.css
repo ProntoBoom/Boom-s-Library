@@ -354,6 +354,13 @@ footer #menu-bottom-footer li {
 }
 
 /*
+* sidebar
+*/
+div[role="complementary"] .search-query + button {
+	font-size: 14px;
+}
+
+/*
 * Custom CSS
 */
 

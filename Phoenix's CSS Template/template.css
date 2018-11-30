@@ -356,7 +356,8 @@ footer #menu-bottom-footer li {
 /*
 * sidebar
 */
-div[role="complementary"] .search-query + button {
+.container form .search-query + button {
+	padding: 6px 12px;
 	font-size: 14px;
 }
 

@@ -1,0 +1,367 @@
+/*-------------------------------------------*\
+  Main Variables
+\*-------------------------------------------*/
+
+@baseColor: #0F0F0F;
+@buttonMain: transparent;
+@inputBorder: #dcdcdc;
+@line-height-heading: 1.4;
+@line-height-body: 1.5;
+@pixelfont: 18px;
+@h1: 40px;
+@h2: 28px;
+@h3: 24px;
+@h4: 20px;
+@h5: 18px;
+@h6: 16px;
+@lead: 20px;
+@accent2: #000;
+@accent3: #333;
+@accent4: #666;
+@accent5: #414141;
+
+/* Do not touch */
+@darkColor: #000; 
+@lightColor: #fff;
+
+/*-------------------------------------------*\
+  Helper function
+\*-------------------------------------------*/
+
+.mixin (@a) when (lightness(@a) >= 66%) {
+	color: @darkColor;
+}
+.mixin (@a) when not (lightness(@a) >= 66%) {
+	color: @lightColor;
+}
+::selection {
+	background: @baseColor;
+}
+::-moz-selection {
+	background: @baseColor;
+}
+
+.complementary(@_a){
+	background-color: @_a;
+	.mixin(@_a);
+}
+.btn(@b:@buttonMain){
+	border-color: @b;
+	.complementary(@b);
+	text-shadow: none;
+
+	&:hover,.disabled, [disabled] {
+		background-color: darken(@b, 4%);
+		border-color: darken(@b, 4%);
+		.mixin(@b);
+	}
+
+	&:active, .active, &:focus, .focus {
+		background-color: darken(@b, 8%);
+		border-color: darken(@b, 8%);
+		.mixin(@b);
+	}
+}
+
+/*-------------------------------------------*\
+  WooCommerce Global Elements
+\*-------------------------------------------*/
+
+/* buttons */
+
+.woocommerce ul.products li.product .button,
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce div.product form.cart .button,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt {
+	.btn(@buttonMain);
+	padding: 15px 20px;
+	color: @buttonMain;
+	font-size: 16px;
+	background-color: transparent;
+	border: 2px solid @buttonMain;
+	border-radius: 0; 
+	transition: all 0.4s;
+	&:hover, &:active, &:focus { 
+		.btn(@buttonMain);
+		border-width: 2px;
+	}
+}
+
+/* product list */
+
+.woocommerce ul.products li.product, 
+.woocommerce-page ul.products li.product {
+	text-align: center;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, 
+.woocommerce ul.products li.product .woocommerce-loop-product__title, 
+.woocommerce ul.products li.product h3 {
+	font-size: @h3;
+}
+
+.woocommerce ul.products li.product .price {
+	font-size: @h4;
+}
+
+.woocommerce ul.products li.product br {
+	display: none;
+}
+
+/*-------------------------------------------*\
+  WooCommerce Single Product Page
+\*-------------------------------------------*/
+
+/* remove sidebar + edit layout */
+
+.single-product {
+	div[role="complementary"] {
+		display: none;
+	}
+	article {
+		width: 100%;
+		left: 0;
+	}
+	.related.products {
+		clear: both;
+	}
+}
+
+/* equalize quantity field height with button */
+
+.single-product {
+	&.woocommerce div.product form.cart {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	&.woocommerce div.product form.cart .quantity input {
+		height: 100%;
+		border: 1px solid @inputBorder;
+	}
+}
+
+/* push tag to new line */
+
+.single-product .product_meta > span {
+	display: block;
+}
+
+/*-------------------------------------------*\
+  WooCommerce Cart & Checkout Page
+\*-------------------------------------------*/
+
+/* quantity field on cart table */
+
+.woocommerce-cart table.cart input {
+	border: 1px solid @inputBorder;
+}
+
+/* remove sidebar on checkout page */
+
+.woocommerce-checkout {
+	div[role="complementary"] {
+		display: none;
+	}
+	article {
+		width: 100%;
+		left: 0;
+	}
+}
+
+/* checkout page input fields */
+
+.woocommerce form .form-row .input-text, 
+.woocommerce-page form .form-row .input-text {
+	padding: 10px;
+	min-height: 50px;
+	border: 1px solid @inputBorder;
+}
+
+.woocommerce form .form-row textarea {
+	min-height: 150px;
+}
+
+.select2-container--default .select2-selection--single {
+	min-height: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/*-------------------------------------------*\
+  WooCommerce My Account page
+\*-------------------------------------------*/
+
+.woocommerce-account .content h1,
+.woocommerce-account .woocommerce form .form-row label + br {
+	display: none;
+}
+
+.woocommerce-account .woocommerce input.button {
+	font-size: 15px;
+	padding: 14px 40px;
+}
+
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul li a {
+	display: inline-block;
+	border: 0;
+	border-bottom: 1px solid @inputBorder;
+	border-radius: 0;
+	padding: 14px 15px 12px 35px;
+	text-decoration: none;
+	width: 100%;
+	color: #515151;
+}
+
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul li:first-child a {
+	border-top: 1px solid @inputBorder;
+}
+
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul {
+	padding: 0;
+	list-style: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+	float: left !important;
+	width: 26% !important;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+	float: right !important;
+	width: 68% !important;
+}
+
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul li.is-active a,
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul li a:hover,
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul li a:focus,
+.woocommerce-account nav.woocommerce-MyAccount-navigation ul li a:active {
+	background-color: @baseColor;
+	color: #fff !important;
+	font-weight: 400;
+}
+
+.woocommerce-account.logged-in .content {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.woocommerce-account .woocommerce-error {
+	width: 100%;
+	margin: 0px auto 28px;
+	z-index: 999;
+	margin-bottom: 120px;
+}
+
+.woocommerce-MyAccount-content .woocommerce-Button + br,
+.woocommerce-MyAccount-content .woocommerce-Button br {
+	display: none;
+}
+
+@media (max-width: 991px) {
+	/* product list */
+
+	.woocommerce ul.products[class*="columns-"] li.product, 
+	.woocommerce-page ul.products[class*="columns-"] li.product {
+		float: left;
+		width: 48%;
+		margin: 0 0 2.992em;
+	}
+
+	/* my account page */
+
+	.woocommerce-account .woocommerce form.login {
+		width: 70%;
+		margin-top: 50px;
+		padding: 50px 45px;
+		margin-bottom: 50px;
+	}
+	.woocommerce-account .woocommerce form.login:before {
+		margin-bottom: 15px;
+	}
+	.woocommerce-LostPassword.lost_password {
+		position: absolute;
+		right: 50px;
+		bottom: 50px;
+		font-weight: 400;
+	}
+	.woocommerce-account nav.woocommerce-MyAccount-navigation ul li a {
+		border-bottom: 1px solid @inputBorder;
+		border-radius: 0;
+		padding: 10px 15px 12px;
+	}
+	.woocommerce-account .woocommerce-error {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	/* product list */
+
+	.woocommerce ul.products[class*="columns-"] li.product, 
+	.woocommerce-page ul.products[class*="columns-"] li.product {
+		width: 100%;
+		max-width: 350px;
+		margin: 0 auto 20px;
+		float: none;
+	}
+	.woocommerce ul.products[class*="columns-"] li.product:nth-child(2n), 
+	.woocommerce-page ul.products[class*="columns-"] li.product:nth-child(2n) {
+		float: none;
+	}
+
+	/* my account page */
+
+	.woocommerce-account .woocommerce form.login {
+		width: 100%;
+		max-width: 500px;
+		margin-top: 20px;
+		padding: 25px;
+		margin-bottom: 20px;
+	}
+	.woocommerce-account .woocommerce form.login:before {
+		margin-bottom: 25px;
+	}
+	.woocommerce-account.logged-in .content {
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		margin-bottom: 40px;
+	}
+	.woocommerce-account .woocommerce-MyAccount-content,
+	.woocommerce-account .woocommerce-MyAccount-navigation {
+		float: none !important;
+		width: 100% !important;
+	}
+	.woocommerce-LostPassword.lost_password {
+		position: relative;
+		right: 0;
+		bottom: 0;
+		font-weight: 400;
+		margin-top: 10px;
+	}
+}

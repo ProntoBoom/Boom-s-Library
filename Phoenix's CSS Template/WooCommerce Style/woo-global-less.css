@@ -25,45 +25,6 @@
 @lightColor: #fff;
 
 /*-------------------------------------------*\
-  Helper function
-\*-------------------------------------------*/
-
-.mixin (@a) when (lightness(@a) >= 66%) {
-	color: @darkColor;
-}
-.mixin (@a) when not (lightness(@a) >= 66%) {
-	color: @lightColor;
-}
-::selection {
-	background: @baseColor;
-}
-::-moz-selection {
-	background: @baseColor;
-}
-
-.complementary(@_a){
-	background-color: @_a;
-	.mixin(@_a);
-}
-.btn(@b:@buttonMain){
-	border-color: @b;
-	.complementary(@b);
-	text-shadow: none;
-
-	&:hover,.disabled, [disabled] {
-		background-color: darken(@b, 4%);
-		border-color: darken(@b, 4%);
-		.mixin(@b);
-	}
-
-	&:active, .active, &:focus, .focus {
-		background-color: darken(@b, 8%);
-		border-color: darken(@b, 8%);
-		.mixin(@b);
-	}
-}
-
-/*-------------------------------------------*\
   WooCommerce Global Elements
 \*-------------------------------------------*/
 
@@ -79,17 +40,26 @@
 .woocommerce a.button.alt, 
 .woocommerce button.button.alt, 
 .woocommerce input.button.alt {
-	.btn(@buttonMain);
 	padding: 15px 20px;
-	color: @buttonMain;
+	color: #fff;
 	font-size: 16px;
-	background-color: transparent;
-	border: 2px solid @buttonMain;
-	border-radius: 0; 
+	text-align: center;
+	background-color: @buttonMain;
+	border-color: @buttonMain;
 	transition: all 0.4s;
 	&:hover, &:active, &:focus { 
-		.btn(@buttonMain);
-		border-width: 2px;
+		background-color: darken( @buttonMain, 8% );
+		border-color: darken( @buttonMain, 8% );
+	}
+}
+
+.btn-primary.disabled, 
+.btn-primary[disabled] {
+	background-color: @buttonMain;
+	border-color: @buttonMain;
+	&:hover, &:active, &:focus { 
+		background-color: darken( @buttonMain, 8% );
+		border-color: darken( @buttonMain, 8% );
 	}
 }
 
@@ -156,6 +126,10 @@
 /*-------------------------------------------*\
   WooCommerce Cart & Checkout Page
 \*-------------------------------------------*/
+
+.woocommerce-cart .return-to-shop br {
+	display: none;
+}
 
 /* quantity field on cart table */
 

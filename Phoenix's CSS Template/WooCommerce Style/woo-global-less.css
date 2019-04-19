@@ -84,6 +84,12 @@
 	display: none;
 }
 
+.woocommerce ul.products li.product .button::after {
+	display: inline-block;
+	position: static;
+	margin-left: 20px;
+}
+
 /*-------------------------------------------*\
   WooCommerce Single Product Page
 \*-------------------------------------------*/
@@ -147,6 +153,21 @@
 		width: 100%;
 		left: 0;
 	}
+}
+
+.shop_table .coupon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+	padding: 0 10px;
+	width: 150px;
+}
+
+.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
+	padding: 15px 20px;
 }
 
 /* checkout page input fields */

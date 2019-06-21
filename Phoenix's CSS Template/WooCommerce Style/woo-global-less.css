@@ -172,6 +172,10 @@
 
 /* checkout page input fields */
 
+.woocommerce-checkout form.checkout br {
+    display: none;
+}
+
 .woocommerce form .form-row .input-text, 
 .woocommerce-page form .form-row .input-text {
 	padding: 10px;
@@ -191,6 +195,11 @@
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+}
+
+.woocommerce-checkout #ship-to-different-address,
+.woocommerce-checkout #ship-to-different-address .woocommerce-form__label {
+	margin-bottom: 0;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {

@@ -4,7 +4,6 @@
 
 @baseColor: #0F0F0F;
 @buttonMain: transparent;
-@inputBorder: #dcdcdc;
 @line-height-heading: 1.4;
 @line-height-body: 1.5;
 @pixelfont: 18px;
@@ -19,6 +18,9 @@
 @accent3: #333;
 @accent4: #666;
 @accent5: #414141;
+
+/* border of all input fields */
+@inputBorder: #dcdcdc;
 
 /* Do not touch */
 @darkColor: #000;

@@ -114,7 +114,7 @@
 /* equalize quantity field height with button */
 
 .single-product {
-	&.woocommerce div.product form.cart {
+	&.woocommerce div.product.product-type-simple form.cart {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -123,6 +123,16 @@
 		height: 100%;
 		border: 1px solid @inputBorder;
 	}
+}
+
+.woocommerce div.product div.images img {
+	width: auto;
+}
+
+/* Carousel's thumbnail */
+
+.woocommerce div.product div.images .flex-control-thumbs li img {
+	width: 100%;
 }
 
 /* push tag to new line */
